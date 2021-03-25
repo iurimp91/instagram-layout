@@ -1,0 +1,223 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo {
+    height: 54px;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0;
+    left: 50;
+    background: white;
+}
+
+.logo {
+    width: auto;
+    height: 29px;
+    display: flex;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 22px;
+}
+
+.borda-logo {
+    width: 1px;
+    height: 22px;
+    background: #DBDBDB;
+    margin: 0 10px;
+}
+
+.caixa-pesquisa {
+    width: 215px;
+    height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.opcoes {
+    width: auto;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcoes ion-icon {
+    margin-left: 20px;
+}
+
+.borda-topo {
+    height: 1px;
+    width: 100%;
+    position: fixed;
+    top: 54px;
+    left: 50;
+    background: black;
+}
+
+.conteudo {
+    height: 800px;
+    width: 935px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.posts {
+    width: 614px;
+    height: 100%;
+}
+
+.stories {
+    width: 614px;
+    height: 118px;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.story {
+    width: 66px;
+    height: 85px;
+    margin-right: 14px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.story:nth-child(2) {
+    margin-left: 18px;
+}
+
+.stories ion-icon {
+    font-size: 32px;
+    position: absolute;
+    color: white;
+    right: 5px;
+    top: 46px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.story-img {
+    width: 66px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    background: url(/Projeto\ 02\ -\ Instagram/imagens/stories_background.jpg);
+    background-size: cover;
+}
+
+.story-img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+.post {
+    width: 614px;
+    height: 749px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.post-topo {
+    width: 614px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.post img {
+    width: 614px;
+    height: 614px;
+}
+
+.post-topo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 0 15px 0 17px;
+}
+
+.post-topo ion-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 465px;
+    margin-right: auto;
+}
+
+.post-opcoes {
+    width: 614px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.post-opcoes ion-icon:last-child {
+    margin-left: 465px;
+}
+
+.post-opcoes ion-icon {
+    margin-left: 15px;
+}
+
+.curtidas {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.curtidas img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin: 0 5px 0 15px;
+}
+
+.sugestoes {
+    width: 293px;
+    height: 100%;
+    background: yellow;
+}
+
+.perfil {
+    width: 293px;
+    height: 103px;
+    margin-top: 30px;
+    background: lightseagreen;
+}
+
+.sugestoes-voce {
+    width: 293px;
+    height: 15px;
+    background: lightgrey;
+}
+
+.sugestoes-perfis {
+    width: 293px;
+    height: 300px;
+    margin-top: 15px;
+    background: lightsalmon;
+}
