@@ -52,8 +52,13 @@ ion-icon {
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     text-align: center;
-    font-size: 12px;
 }
+
+::-webkit-input-placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+  }
 
 .opcoes {
     width: auto;
@@ -73,7 +78,7 @@ ion-icon {
     position: fixed;
     top: 54px;
     left: 50;
-    background: black;
+    background: #DBDBDB;
     z-index: 10;
 }
 
@@ -110,6 +115,7 @@ ion-icon {
     margin-right: 14px;
     text-align: center;
     font-size: 12px;
+    color: #262626;
 }
 
 .story:nth-child(2) {
@@ -231,25 +237,89 @@ ion-icon {
 .sugestoes {
     width: 293px;
     height: 100%;
-    background: yellow;
 }
 
 .perfil {
     width: 293px;
     height: 103px;
-    margin-top: 30px;
-    background: lightseagreen;
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.perfil p:last-child {
+    font-weight: 300;
+    color: #8E8E8E;
+    margin-top: 3px;
+}
+
+.perfil img {
+    margin-right: 17px;
+    width: 56px;
+    height: 56px;
 }
 
 .sugestoes-voce {
     width: 293px;
     height: 15px;
-    background: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: 500;
+}
+
+.sugestoes-voce p:last-child {
+    color: #262626;
 }
 
 .sugestoes-perfis {
     width: 293px;
-    height: 300px;
-    margin-top: 15px;
-    background: lightsalmon;
+    height: auto;
+}
+
+.sugestoes-perfis-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-top: 17px;
+}
+
+.sugestoes-perfis-box img {
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+}
+
+.sugestoes-perfis-box div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.sugestoes-perfis-box p:first-child {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #262626;
+}
+
+.seguir {
+    font-weight: 500;
+    color: #139EF2;
+}
+
+.info {
+    font-size: 11px;
+    color: #C7C7C7;
+    line-height: 12.89px;
+    margin-top: 33px;
+}
+
+.info p {
+    margin-top: 18px;
 }
