@@ -106,7 +106,6 @@ ion-icon {
 .stories {
     width: 614px;
     height: 118px;
-    margin-top: 34px;
     margin-bottom: 24px;
     display: flex;
     align-items: center;
@@ -175,12 +174,15 @@ ion-icon {
     height: 61px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 14px;
     font-weight: 500;
 }
 
 .pagina {
-    width: 209px;
+    height: inherit;
+    display: flex;
+    align-items: center;
 }
 
 .post img {
@@ -203,7 +205,7 @@ ion-icon {
 .post-topo ion-icon {
     width: 16px;
     height: 16px;
-    margin-left: 308px;
+    margin-right: 17px;
 }
 
 .post-opcoes {
@@ -211,11 +213,12 @@ ion-icon {
     height: 38px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 2px;
 }
 
 .post-opcoes ion-icon:last-child {
-    margin-left: 465px;
+    margin-right: 17px;
 }
 
 .post-opcoes ion-icon {
@@ -251,7 +254,6 @@ ion-icon {
 .perfil {
     width: 293px;
     height: 103px;
-    margin-top: 34px;
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -349,36 +351,42 @@ ion-icon {
 }
 
 @media (max-width: 614px) {
+    .sugestoes {
+        display: none;
+    }
+
+    .menu-topo-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 54px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        border-bottom: 1px solid #DBDBDB;
+        background-color: white;
+    }
+
+    .menu-topo-mobile ion-icon:first-child {
+        margin-left: 20px;
+    }
+
+    .menu-topo-mobile ion-icon:last-child {
+        margin-right: 20px;
+    }
+
+    .menu-topo-mobile img {
+        height: 29px;
+    }
+
+    .borda-topo {
+        display: none;
+    }
+
     .topo-fundo {
-        width: 100%;
-    }
-
-    .topo {
-        width: 100%;
-    }
-
-    .opcoes ion-icon:nth-child(1) {
-        display: block;
-    }
-
-    .opcoes ion-icon {
         display: none;
-    }
-
-    .topo input {
-        display: none;
-    }
-
-    .borda-logo {
-        display: none;
-    }
-
-    .logo img {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
     }
 
     .stories ion-icon {
@@ -421,6 +429,18 @@ ion-icon {
         width: 100%;
     }
 
+    .post-topo {
+        width: 100%;
+    }
+
+    .post-opcoes {
+        width: 100%;
+    }
+
+    .curtidas {
+        width: 100%;
+    }
+
     .menu-inferior-mobile {
         display: flex;
         justify-content: space-between;
@@ -429,8 +449,9 @@ ion-icon {
         background-color: white;
         position: fixed;
         bottom: 0;
-        left: 0;
+        left: 50;
         width: 100%;
+        z-index: 10;
         border-top: 1px solid #DBDBDB; 
     }
 
