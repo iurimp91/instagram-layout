@@ -34,6 +34,14 @@ body {
     align-items: center;
 }
 
+.logo-mobile {
+    display: none;
+}
+
+.menu-inferior-mobile {
+    display: none;
+}
+
 ion-icon {
     font-size: 22px;
 }
@@ -141,6 +149,7 @@ ion-icon {
     margin-bottom: 6px;
     background: url(/Projeto\ 02\ -\ Instagram/imagens/stories_background.jpg);
     background-size: cover;
+    border-radius: 33px;
 }
 
 .story-img img {
@@ -340,5 +349,101 @@ ion-icon {
 }
 
 @media (max-width: 614px) {
-    
+    .topo-fundo {
+        width: 100%;
+    }
+
+    .topo {
+        width: 100%;
+    }
+
+    .opcoes ion-icon:nth-child(1) {
+        display: block;
+    }
+
+    .opcoes ion-icon {
+        display: none;
+    }
+
+    .topo input {
+        display: none;
+    }
+
+    .borda-logo {
+        display: none;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .stories ion-icon {
+        display: none;
+    }
+
+    .conteudo {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .posts {
+        width: 100%;
+    }
+
+    .stories {
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 0;
+    }
+
+    .post {
+        width: 100%;
+        border-right: none;
+        border-right: left;
+    }
+
+    .post img:nth-child(2) {
+        width: 100%;
+    }
+
+    .post video {
+        width: 100%;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .menu-inferior-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 54px;
+        background-color: white;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #DBDBDB; 
+    }
+
+    .menu-inferior-mobile ion-icon:first-child {
+        margin-left: 20px;
+    }
+
+    .menu-inferior-mobile ion-icon:last-child {
+        margin-right: 20px;
+    }
+
+    .borda-menu-inferior-mobile {
+        height: 1px;
+        width: 100%;
+    }
 }
