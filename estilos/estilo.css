@@ -323,3 +323,22 @@ ion-icon {
 .info p {
     margin-top: 18px;
 }
+
+@media (max-width: 935px) {
+    .sugestoes {
+        display: none;
+    }
+
+    .conteudo {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .topo {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 614px) {
+    
+}
