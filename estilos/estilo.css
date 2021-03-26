@@ -2,6 +2,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Roboto;
+    background-color: #E5E5E5;
+}
+
+.topo-fundo {
+    width: 100%;
+    height: 54px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50;
+    z-index: 10;
 }
 
 .topo {
@@ -10,9 +24,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position:fixed;
-    top: 0;
-    left: 50;
     background: white;
 }
 
@@ -63,6 +74,7 @@ ion-icon {
     top: 54px;
     left: 50;
     background: black;
+    z-index: 10;
 }
 
 .conteudo {
@@ -89,6 +101,7 @@ ion-icon {
     border-radius: 3px;
     overflow: hidden;
     position: relative;
+    background: white;
 }
 
 .story {
@@ -119,7 +132,7 @@ ion-icon {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3px;
+    margin-bottom: 6px;
     background: url(/Projeto\ 02\ -\ Instagram/imagens/stories_background.jpg);
     background-size: cover;
 }
@@ -132,26 +145,37 @@ ion-icon {
 
 .post {
     width: 614px;
-    height: 749px;
+    height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     margin-bottom: 60px;
-    background-color: blue;
+    background-color: white;
 }
 
 .post-topo {
     width: 614px;
-    height: 60px;
+    height: 61px;
     display: flex;
     align-items: center;
     font-size: 14px;
+    font-weight: 500;
+}
+
+.pagina {
+    width: 209px;
 }
 
 .post img {
     width: 614px;
     height: 614px;
+}
+
+.post video {
+    width: 614px;
+    height: 460.5px;
 }
 
 .post-topo img {
@@ -164,8 +188,7 @@ ion-icon {
 .post-topo ion-icon {
     width: 16px;
     height: 16px;
-    margin-left: 465px;
-    margin-right: auto;
+    margin-left: 308px;
 }
 
 .post-opcoes {
@@ -173,6 +196,7 @@ ion-icon {
     height: 38px;
     display: flex;
     align-items: center;
+    margin-top: 2px;
 }
 
 .post-opcoes ion-icon:last-child {
@@ -184,17 +208,24 @@ ion-icon {
 }
 
 .curtidas {
-    height: 38px;
-    display: flex;
-    align-items: center;
+    width: 614px;
+    height: 36px;
     font-size: 14px;
+    font-weight: 300;
+    margin-top: 1px;
+    display: flex;
+    align-items: top;
+}
+
+.curtidas div {
+    margin-top: 3px;
 }
 
 .curtidas img {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    margin: 0 5px 0 15px;
+    margin: 0 5px 0 17px;
 }
 
 .sugestoes {

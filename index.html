@@ -7,23 +7,27 @@
 
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="topo">
-        <div class="logo">
-            <ion-icon name="logo-instagram"></ion-icon>
-            <div class="borda-logo"></div>
-            <img src="imagens/logo.png">
-        </div>
-        <input class="caixa-pesquisa" type="text" placeholder="Pesquisar">
-        <div class="opcoes">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="compass-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+    <div class="topo-fundo">
+        <div class="topo">
+            <div class="logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <div class="borda-logo"></div>
+                <img src="imagens/logo.png">
+            </div>
+            <input class="caixa-pesquisa" type="text" placeholder="Pesquisar">
+            <div class="opcoes">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
         </div>
     </div>
-
+    
     <div class="borda-topo"></div>
 
     <div class="conteudo">
@@ -63,9 +67,9 @@
                     memeriagourmet
                 </div>
             </div>
-            <div class="post">
+            <div class="post"> <!--POST 01 - Gato-->
                 <div class="post-topo">
-                    <img src="imagens/meowed 2.png">meowed
+                    <img src="imagens/meowed 2.png"><div class="pagina">meowed</div>
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
                 <img src="imagens/gato-telefone 1.png">
@@ -77,15 +81,18 @@
                 </div>
                 <div class="curtidas">
                     <img src="imagens/respondeai 2.png">
-                    Curtido por respondeai e outras 101.523 pessoas
+                    <div>Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></div>
                 </div>
             </div>
-            <div class="post">
+            <div class="post"> <!--POST 02 - Vídeo-->
                 <div class="post-topo">
-                    <img src="imagens/barked 2.png">barked
+                    <img src="imagens/thedarksideofnature.jpg"><div class="pagina">thedarksideofnature</div>
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
-                <img src="imagens/gato-celular.JPG">
+                <video autoplay="autoplay" muted="true" loop="true">
+                    <source src="vídeos/video.mp4" type="video/mp4">
+                    <source src="vídeos/video.ogv" type="video/ogv">
+                </video>
                 <div class="post-opcoes">
                     <ion-icon name="heart-outline"></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
@@ -93,16 +100,16 @@
                     <ion-icon name="bookmark-outline"></ion-icon>
                 </div>
                 <div class="curtidas">
-                    <img src="imagens/gato-celular.JPG">
-                    Curtido por respondeai e outras 101.523 pessoas
+                    <img src="imagens/filomoderna 1.png">
+                    <div>Curtido por <strong>filomoderna</strong> e <strong>outras 154.982 pessoas</strong></div>
                 </div>
             </div>
-            <div class="post">
+            <div class="post"> <!--POST 03 - Cachorro-->
                 <div class="post-topo">
-                    <img src="imagens/gato-celular.JPG">meowed
+                    <img src="imagens/barked 2.png"><div class="pagina">barked</div>
                     <ion-icon name="ellipsis-horizontal"></ion-icon>
                 </div>
-                <img src="imagens/gato-celular.JPG">
+                <img src="imagens/dog 1.png">
                 <div class="post-opcoes">
                     <ion-icon name="heart-outline"></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
@@ -110,8 +117,8 @@
                     <ion-icon name="bookmark-outline"></ion-icon>
                 </div>
                 <div class="curtidas">
-                    <img src="imagens/gato-celular.JPG">
-                    Curtido por respondeai e outras 101.523 pessoas
+                    <img src="imagens/adorableanimals 1.png">
+                    <div>Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong></div>
                 </div>
             </div>
         </div>
